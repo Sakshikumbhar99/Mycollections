@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>"Sakshi`s collections"</title>
+    <link rel="icon" href="images/img115.jpg" type="images/.jpg">
+
+    <!--link for css-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--link for toggle--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!---background-animation-->
+    <div class="banner">
+        <div class="banner-img" style="background-image: url('images/img66.jpeg')"></div>
+        <div class="banner-img" style="background-image: url('images/img145.jpg')"></div>
+        <div class="banner-img" style="background-image: url('images/img39.jpg')"></div>
+        <div class="banner-img" style="background-image: url('images/img138.jpeg')"></div>
+    </div>
+
+    <div class="container">
+
+        <nav>
+
+            <div class="menu">
+                <label class="toggle">
+                    <i class="fa-solid fa-bars-staggered" id="menubtn"></i>
+                </label>
+            </div>
+
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+
+            <div class="socialtop">
+                <div class="top-social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100094179634994&mibextid=ZbWKwL"
+                                class="fa-brands fa-facebook-f"></a></li>
+                        <li><a href="https://instagram.com/sakshi_kumbhar_99?igshid=MzNlNGNkZWQ4Mg==" target="_blank"
+                                class="fa-brands fa-instagram"></a></li>
+                        <li><a href="https://twitter.com/Sakshikumbhar86?t=uEfQ4zh1xZlM2_ccFYYqZQ&s=09" target="_blank"
+                                class="fa-brands fa-twitter"></a></li>
+                        <li><a href="https://github.com/Sakshikumbhar99" target="_blank"
+                                class="fa-brands fa-github"></a>
+                        </li>
+                        <li><a href="mailto:sakshi.kumbhar465@gmail.com" target="_blank" class="fa fa-envelope"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class="logo">
+                <a href="#">SAKSHI KUMBHAR<span>.</span></a>
+            </h1>
+
+        </nav>
+
+        <footer class="flex-all-center">
+            <p> &copy; 2023 Designed by Sakshi Satish Kumbhar.</p>
+        </footer>
+
+    </div>
+
+    <!--script for toggle-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script>
+        $(document).ready(function () {
+            $(".toggle").click(function () {
+                $("ul").slideToggle("slow");
+            });
+        });
+        let menubtn = document.getElementById('menubtn')
+        menubtn.addEventListener('click', function (e) {
+            document.querySelector('body').classList.toggle('mobile-nav-active');
+            this.classList.toggle('fa-xmark')
+        })
+    </script>
+
+</body>
+
+</html>

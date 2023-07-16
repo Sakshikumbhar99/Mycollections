@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sakshi`s collections : About</title>
+    <link rel="icon" href="images/img115.jpg" type="images/.jpg">
+
+    <!----link for css-->
+    <link rel="stylesheet" href="css/about.css">
+    <!---lnk for google icon---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@200&family=Roboto+Slab:wght@300;400&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anuphan:wght@200&family=Bebas+Neue&family=Kanit:wght@200&family=Quicksand:wght@600&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <section id="sec-1" class="pimg1">
+        <div class="ptextk1">
+            <h1><span class="ptextf">ABOUT ME</span></h1>
+            <a href="#sec-2">
+                <div class="scroll-down"></div>
+            </a>
+        </div>
+    </section>
+
+
+    <section id="sec-2" class="about">
+        <div class="content">
+            <img src="images/it`s meeee.jpg" alt="">
+            <div class="text">
+                <h2>about me</h2>
+                <p> Welcome, to my world of photograpy. <br>
+                    I`m SAKSHI SATISH KUMBHAR. Nature is my catalyst. My passion for nature photograpy allows to capture
+                    the world's beauty in a unique way. <br>Here you will find a collections of my favourite clicks
+                    including flowers, hills, temples & more. I have passion for capture the beauty of the world around
+                    us & I`m excited to share my world with you. <br> I hope you enjoy my work. Take a look at my
+                    portfolio & feel free to contact with me with any question & inquires.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pimg2">
+        <div class="ptextk2">
+            <span class="ptextff">"photograpy is allows us to see the world in a different way."</span>
+        </div>
+    </section>
+    <footer class="bg-dark-1">
+        <section id="footer" class="py-5">
+            <div class="container">
+                <a href="https://instagram.com/sakshi_kumbhar_99?igshid=MzNlNGNkZWQ4Mg==">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100094179634994&mibextid=ZbWKwL">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/Sakshikumbhar86?t=uEfQ4zh1xZlM2_ccFYYqZQ&s=09" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                 </a>
+                <a href="https://github.com/Sakshikumbhar99">
+                    <i target="_blank" class="fab fa-github"></i>
+                </a>
+                <a href="mailto:sakshi.kumbhar465@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+            <h6 class="textcenter">&copy;2023 DESIGNED BY SAKSHI SATISH KUMBHAR</h6>
+        </section>
+    </footer>
+
+
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+
+
+    <script>
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById
+                ("progress-value");
+            let pos = document.documentElement.scrollTop;
+            let calcHeight =
+                document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+            } else {
+                scrollProgress.style.display = "none";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+        };
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
+</body>
+
+</html>
